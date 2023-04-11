@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_stocked_2">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/item_setup_back_btn2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ic_back"
+        android:backgroundTint="#08333b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/set_up_operation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="SETUP ACCOUNT"
+        android:textColor="#08333b"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/item_setup_back_btn2"
+        app:layout_constraintStart_toEndOf="@+id/item_setup_back_btn2"
+        app:layout_constraintTop_toTopOf="@+id/item_setup_back_btn2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout11"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_up_operation2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/modify_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawablePadding="10dp"
+            android:drawableTint="#8c8c8c"
+            android:hint="Full Name"
+            android:singleLine="true"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout12"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout11"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout11"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout11">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/modify_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:drawableTint="#8c8c8c"
+            android:hint="Email"
+            android:singleLine="true"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout12"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout12"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

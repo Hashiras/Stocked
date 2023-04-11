@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_background">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/home_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/white"
+        android:drawableTop="@drawable/ic_list"
+        android:drawablePadding="10dp"
+        android:drawableTint="#08333b"
+        android:elevation="20dp"
+        android:padding="20dp"
+        android:text="List"
+        android:textColor="#08333b"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/home_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:drawableTop="@drawable/ic_add"
+        android:drawablePadding="10dp"
+        android:drawableTint="#08333b"
+        android:elevation="20dp"
+        android:padding="20dp"
+        android:text="Add"
+        android:textColor="#08333b"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/home_list"
+        app:layout_constraintEnd_toStartOf="@+id/home_account"
+        app:layout_constraintStart_toEndOf="@+id/home_list"
+        app:layout_constraintTop_toTopOf="@+id/home_list" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/home_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:drawableTop="@drawable/ic_profile"
+        android:drawablePadding="10dp"
+        android:drawableTint="#08333b"
+        android:elevation="20dp"
+        android:padding="20dp"
+        android:text="Account"
+        android:textColor="#08333b"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/home_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/home_add" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="Hello User!"
+        android:textColor="#08333b"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/home_list"
+        app:layout_constraintStart_toStartOf="@+id/home_list" />
+</androidx.constraintlayout.widget.ConstraintLayout>

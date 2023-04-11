@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:text="Name: Salompas"
+            android:textColor="#08333b"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/card_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:text="Quantity: 120"
+            app:layout_constraintStart_toStartOf="@+id/card_name"
+            app:layout_constraintTop_toBottomOf="@+id/card_name" />
+
+        <TextView
+            android:id="@+id/card_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Owner: Ken Kalbo"
+            app:layout_constraintStart_toStartOf="@+id/card_quantity"
+            app:layout_constraintTop_toBottomOf="@+id/card_quantity" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_view"
+            android:backgroundTint="#DCC926"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_owner"
+            tools:layout_editor_absoluteX="243dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_update"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/ic_edit"
+            android:backgroundTint="#8BC34A"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view"
+            app:layout_constraintStart_toEndOf="@+id/card_view"
+            app:layout_constraintTop_toTopOf="@+id/card_view" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="23dp"
+            android:background="@drawable/ic_delete"
+            android:backgroundTint="#F44336"
+            app:layout_constraintBottom_toBottomOf="@+id/card_update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_update"
+            app:layout_constraintTop_toTopOf="@+id/card_update" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
